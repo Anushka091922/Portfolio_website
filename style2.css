@@ -1,0 +1,170 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    border-color: #000;
+}
+
+header {
+    background-color: rgb(31, 31, 31);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out, border-radius 0.3s, box-shadow 0.3s;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+header:hover {
+    background: linear-gradient(45deg, #070d12, #340728); /* Gradient background on hover */
+    transform: scale(1.05); /* Scale the header on hover */
+}
+
+header:active {
+    border-radius: 0; /* Remove border radius on click */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow on click */
+}
+
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.project {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 12px; /* Rounded corners */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project img {
+        max-width: 600px;
+        max-height: 150px;
+        width: auto;
+        height: auto;
+        margin-bottom: 10px; /* Add margin to separate image and content */
+    }
+
+.project h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.project p {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.project a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff; /* White text color for buttons */
+    padding: 5px 10px;
+    border: 1px solid #0c0c0c;
+    border-radius: 12px; /* Rounded corners */
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.project a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Black background */
+    transition: left 0.2s;
+    z-index: -1;
+}
+
+.project a:hover {
+    background-color: #fff; /* White background on hover */
+    color: #fbf5f5; /* Black text on hover */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.project a:hover:before {
+    left: 0;
+}
+
+.github-button {
+    background-color: grey; /* GitHub green */
+    font-size: medium;
+    font-weight: bolder;
+    
+}
+
+.documentation-button {
+    background-color: grey; /* GitHub blue */
+    font-size: medium;
+    font-weight: bolder;
+}
+
+/* Set the "View Details" text color to black */
+.project a {
+    color: #000;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .project {
+        width: 100%;
+    }
+}
+
+
+/* Add this CSS to your header element */
+.header {
+    background-color: grey; /* Gray button color */
+    color: white; /* White text color */
+    font-size: medium;
+    font-weight: bolder;
+    border: 1px solid #000; /* Black border */
+    border-radius: 12px; /* Rounded corners */
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Black background */
+    transition: left 0.2s;
+    z-index: -1;
+}
+
+.header:hover {
+    background-color: #000; /* Black background on hover */
+    color: #fff; /* White text on hover */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.header:hover:before {
+    left: 0;
+}
+
