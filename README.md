@@ -14,3 +14,5 @@ This is my Portfolio Website
 ![Screenshot 2023-10-05 232141](https://github.com/Anushka091922/Portfolio_website/assets/114327511/ccfa48a5-08ff-42a2-9802-b21e0d71eeca)
 
 ![Screenshot 2023-10-05 232200](https://github.com/Anushka091922/Portfolio_website/assets/114327511/25bdcbd3-bbd8-4ee4-82a7-7ecfc010cfea)
+
+These are the screenshots
